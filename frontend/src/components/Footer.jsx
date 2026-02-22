@@ -24,9 +24,9 @@ const Footer = () => {
       marginBottom: '24px',
     },
     logoIcon: {
-      width: '40px',
-      height: '40px',
-      backgroundColor: '#123524',
+      width: '80px',
+      height: '80px',
+      //backgroundColor: '#123524',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
@@ -122,10 +122,10 @@ const Footer = () => {
           <div>
             <div style={styles.logo}>
               <div style={styles.logoIcon}>
-                <Scale size={20} color="#e2bc6f" />
+                <img src="/img/logo5.png" alt="Logo" style={{ width: '80px', height: '80px' }} />
               </div>
               <span style={styles.logoText}>
-                Имилиана<span style={{ color: '#123524' }}>Цонева</span>
+                Имилиана <span style={{ color: '#123524' }}>Цонева</span>
               </span>
             </div>
             <p style={styles.description}>

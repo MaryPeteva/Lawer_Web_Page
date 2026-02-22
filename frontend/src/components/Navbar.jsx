@@ -51,8 +51,6 @@ const Navbar = () => {
             color: '#e2bc6f'
         },
         logoIconL:{
-            width: '40px',
-            height: '40px',
             backgroundColor: '#e2bc6f',
             display: 'flex',
             alignItems: 'center',
@@ -114,8 +112,8 @@ const Navbar = () => {
         <nav style={styles.nav}>
             <div style={styles.container}>
                 <a href="#home" style={styles.logo}>
-          <div style={styles.logoIcon}>
-            <Scale size={20} color="#e2bc6f" />
+          <div>
+            <img src="/img/logo5.png" alt="Logo" style={{ width: '80px', height: '80px' }} />
           </div>
           <span style={styles.logoText}>
             Правна кантора<span style={{ color: isScrolled ? '#e2bc6f' : '#123524' }}> Имилиана Цонева</span>
