@@ -62,14 +62,14 @@ const Navbar = () => {
             fontWeight: 700,
         },
         navLinks:{
-            color: 'red',
+
             display: 'flex',
             allignItems: 'center',
             gap: '32px',
         },
         navLink:{
            margin: '25px 0',
-            color: 'red',
+            color: isScrolled ? '#e2bc6f' : '#123524',
             textDecoration: 'none',
             fontSize: '14px',
             fontWeight: 500,
