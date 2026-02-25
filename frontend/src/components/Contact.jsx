@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, Clock, ArrowRight } from 'lucide-react';
+import { useForm, ValidationError } from '@formspree/react';
 
 const contactInfo = [
   { icon: MapPin, label: 'Адрес', value: 'гр. Карнобат, ул. ”Карл Маркс” 2' },
@@ -121,14 +122,28 @@ const Contact = () => {
     },
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const formData = new FormData(e.target);
-    const name = formData.get('name');
-    const email = formData.get('email');
-    const message = formData.get('message');
-    window.location.href = `mailto:contact@lawerwebpage.com?subject=Consultation Request from ${name}&body=${message}%0A%0AFrom: ${name}%0AEmail: ${email}`;
-  };
+  // use Formspree for submissions; replace the form action ID with your own
+  const [state, handleSubmit] = useForm('mnjbwnzw');
+
+  // show success message when submitted
+  if (state.succeeded) {
+    return (
+      <section id="contact" style={styles.section}>
+        <div style={styles.container}>
+          <motion.div
+            style={styles.header}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <p style={styles.tagline}>Свържете се с мен</p>
+            <h2 style={styles.title}>Вашето съобщение е изпратено</h2>
+            <p style={styles.subtitle}>Ще се свържа с вас възможно най-скоро.</p>
+          </motion.div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section id="contact" style={styles.section}>
@@ -174,12 +189,20 @@ const Contact = () => {
             <div style={styles.formRow} className="form-row">
               <input name="name" placeholder="Вашето име *" required style={styles.input} />
               <input name="email" type="email" placeholder="Email *" required style={styles.input} />
+              <ValidationError prefix="Email" field="email" errors={state.errors} />
             </div>
             <div style={styles.formRow} className="form-row">
               <input name="phone" placeholder="Телефон" style={styles.input} />
+              <ValidationError prefix="Phone" field="phone" errors={state.errors} />
             </div>
-            <textarea name="message" placeholder="Вашето запитване*" required style={styles.textarea} />
-            <button type="submit" style={styles.submitBtn}>
+            <textarea
+              name="message"
+              placeholder="Вашето запитване*"
+              required
+              style={styles.textarea}
+            />
+            <ValidationError prefix="Message" field="message" errors={state.errors} />
+            <button type="submit" style={styles.submitBtn} disabled={state.submitting}>
               Изпрати запитване <ArrowRight size={16} />
             </button>
           </motion.form>

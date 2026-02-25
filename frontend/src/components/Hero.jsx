@@ -49,13 +49,20 @@ const Hero = () => {
       color: '#123524',
       marginBottom: '24px',
     },
-    title: {
-      fontFamily: 'Playfair Display, serif',
-      fontSize: 'clamp(40px, 6vw, 72px)',
-      fontWeight: 700,
-      lineHeight: 1.1,
-      marginBottom: '32px',
-    },
+          title: {
+            fontFamily: 'Playfair Display, serif',
+            fontSize: 'clamp(40px, 6vw, 72px)',
+            fontWeight: 700,
+            lineHeight: 1.1,
+            marginBottom: '32px',
+          },
+            title2: {
+            fontFamily: 'Playfair Display, serif',
+            fontSize: 'clamp(20px, 3vw, 36px)',
+            fontWeight: 700,
+            lineHeight: 1.1,
+            marginBottom: '32px',
+          },
     accent: {
       color: '#123524',
       position: 'relative',
@@ -171,13 +178,22 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
           >
             <h1 style={styles.title}>
-              Справедливост
+              Доверете се на
               <br />
-              <span style={styles.accent}>с яснота</span>
+              <span style={styles.accent}> професионализма!</span>
             </h1>
             <p style={styles.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Предоставм правна защита и процесуално представителство в областта на наказателния, гражданския и административния процес, както на физически, така и юридически лица при извънсъдебно и съдебно решаване на спорове !
             </p>
+            <h4 style={styles.title2}>
+                Моето мото е:
+                <br />
+                <span style={styles.accent}>бързина </span>
+                <br />
+                <span style={styles.accent}> качество</span>
+                <br />
+                <span style={styles.accent}> цена</span>
+              </h4>
             <div style={styles.buttons}>
               <a href="#contact" style={styles.primaryBtn}>
                 Задайте въпрос <ArrowRight size={16} />

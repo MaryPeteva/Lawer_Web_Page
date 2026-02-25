@@ -5,8 +5,8 @@ import {Menu, X, Scale} from 'lucide-react';
 const navLinks = [
     {name: 'Начало', href: '#home'},
     {name: 'Правни услуги', href: '#practice'},
-    {name: 'За мен', href: '#about'},
-    {name: 'Блог', href: '#team'},
+    {name: 'За мен', href: '#team'},
+    {name: 'Често задавани въпроси', href: '#faq'},
     {name: 'Контакти', href: '#contact'},
 ];
 
@@ -114,7 +114,7 @@ const Navbar = () => {
             <div style={styles.container}>
                 <a href="#home" style={styles.logo}>
           <div>
-            <img src="/img/logo5.png" alt="Logo" style={{ width: '80px', height: '80px' }} />
+            <img src="/img/logo5.png" alt="Logo" style={{ width: '80px', height: '100px' }} />
           </div>
           <span style={styles.logoText}>
             Правна кантора<span style={{ color: isScrolled ? '#e2bc6f' : '#123524' }}> Имилиана Цонева</span>

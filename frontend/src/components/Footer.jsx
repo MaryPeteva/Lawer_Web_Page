@@ -122,7 +122,7 @@ const Footer = () => {
           <div>
             <div style={styles.logo}>
               <div style={styles.logoIcon}>
-                <img src="/img/logo5.png" alt="Logo" style={{ width: '80px', height: '80px' }} />
+                <img src="/img/logo5.png" alt="Logo" style={{ width: '80px', height: '100px' }} />
               </div>
               <span style={styles.logoText}>
                 Имилиана <span style={{ color: '#123524' }}>Цонева</span>
@@ -148,8 +148,8 @@ const Footer = () => {
 
           <div>
             <h4 style={styles.columnTitle}>Информация</h4>
-            <a href="#about" style={styles.link}>За нас</a>
-            <a href="#team" style={styles.link}>Нашия екип</a>
+            <a href="#team" style={styles.link}>За мен</a>
+            <a href="#faq" style={styles.link}>Често задавани въпроси</a>
             <a href="#contact" style={styles.link}>Контакти</a>
             <a href="/privacy-policy" style={styles.link}>Политика за поверителност</a>
           </div>

@@ -3,10 +3,13 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Plus, Minus } from 'lucide-react';
 
 const faqs = [
-  { q: 'What types of cases does LawerWebAge handle?', a: 'We handle corporate law, civil litigation, family law, estate planning, criminal defense, and real estate law.' },
-  { q: 'How do I schedule a consultation?', a: 'You can fill out our contact form, call us directly, or email us. Initial consultations are complimentary.' },
-  { q: 'What are your fees?', a: 'Our fee structures vary. We offer hourly rates, flat fees, and contingency arrangements where appropriate.' },
-  { q: 'How long will my case take?', a: 'Timelines vary based on complexity. During consultation, we provide realistic timeline estimates.' },
+  { q: 'Как да се подготвя за първа консултация?', a: 'Съберете всички документи, договори, кореспонденция и доказателства, свързани с вашия случай.' },
+  { q: 'Какви документи трябва да предоставя?', a: 'Зависи от случая, но обикновено включва лични карти, договори, нотариални актове, съдебни книжа и др.' },
+  { q: 'Запазва ли се тайна споделената информация?', a: 'Да, адвокатската тайна е гарантирана от закона и всяка информация остава строго поверителна.' },
+  { q: 'Какви са рисковете да действам без адвокат?', a: 'Без правна помощ е лесно да се направят процесуални грешки, които могат да доведат до сериозни финансови или правни последици.' },
+  { q: 'Мога ли да упълномощя адвокат да действа от мое име?', a: 'Да, с нотариално заверено пълномощно адвокатът може да ви представлява пред институции, съдилища и нотариуси.' },
+  { q: 'Как се заплащат адвокатските услуги?', a: 'Плащането обикновено става по банков път или в брой срещу издаден документ (фактура/касова бележка).' },
+  { q: 'Предлагат ли се онлайн консултации?', a: 'Да, предлагам консултации по телефон или видеовръзка.' },
 ];
 
 const FAQ = () => {
@@ -64,7 +67,7 @@ const FAQ = () => {
   };
 
   return (
-    <section style={styles.section}>
+    <section id="faq" style={styles.section}>
       <div style={styles.container}>
         <motion.div
           style={styles.header}
