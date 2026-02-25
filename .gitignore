@@ -36,3 +36,5 @@ Thumbs.db
 
 # Misc
 .cache/
+node_modules/
+npm-debug.log*
