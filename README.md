@@ -8,25 +8,28 @@ A modern, responsive website for a law office built with React and styled with C
 - ⚛️ Built with React for modern, component-based architecture
 - 🎨 Clean, professional aesthetic with custom styling
 - 🧭 Navigation system with Navbar component
-- 📑 Pre-built page components including:
+- 📑 Page components include:
   - Hero section with call-to-action
   - About page
-  - Practice Areas/Services
+  - Practice Areas/Services (expandable cards)
   - Team showcase
   - Client Testimonials
-  - FAQ section
-  - Contact page
+  - FAQ section (accordion style)
+  - Contact page with Formspree integration
   - Privacy Policy
   - Statistics/Stats section
   - Footer with links
 
 ## Technical Details
 
-- **Framework**: React - component-based architecture
-- **Styling**: CSS for layouts, responsive design with media queries
+- **Framework**: React (created via Create React App)
+- **Styling**: Plain CSS with flexbox/grid and media queries; component-scoped styles
 - **Package Manager**: npm
-- **Build Tools**: Create React App (or similar React setup)
-- **Modern CSS**: Flexbox, Grid, and media queries for responsive design
+- **Dependencies**:
+  - `framer-motion` for scroll/hover animations
+  - `lucide-react` for iconography
+  - `@formspree/react` for contact form handling
+- **Browser Compatibility**: ES6+ modern browsers
 
 ## Project Structure
 
@@ -66,7 +69,9 @@ LawerWebPage/
 
 ## Current Status
 
-The project is in active development with a complete React component structure in place. Core functionality is implemented with navigation, service pages, team information, and contact features. 
+The project is in active development. All major sections are implemented and styled; the contact form now integrates with Formspree and other interactive elements use Framer Motion for subtle animation. Ongoing work includes accessibility audits and performance tuning.
+
+---
 
 ## License
 
