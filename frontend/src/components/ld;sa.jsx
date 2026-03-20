@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, Clock, ArrowRight } from 'lucide-react';
 
 const contactInfo = [
+  { icon: MapPin, label: 'Адрес', value: 'гр. Карнобат, ул. "Карл Маркс" 2' },
   { icon: Phone, label: 'Телефон', value: '0894/335 770' },
   { icon: Mail, label: 'Email', value: 'imiliana2011@gmail.com' },
   { icon: Clock, label: 'Работно време', value: 'Понеделник - Петък \n  от 9:00 до 17:00' },
-  { icon: MapPin, label: 'Адрес', value: 'гр. Карнобат, ул. "Карл Маркс" 2' },
 ];
 
 const Contact = () => {

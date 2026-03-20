@@ -157,6 +157,7 @@ const Footer = () => {
           <div>
             <h4 style={styles.columnTitle}>Контакти</h4>
             <p style={styles.link}>ул. ”Карл Маркс” 2</p>
+            
             <p style={styles.link}>гр. Карнобат</p>
             <p style={styles.link}>0894/335 770</p>
           </div>
@@ -169,7 +170,7 @@ const Footer = () => {
               <div style={styles.bottom}>
           <p style={styles.copyright}>© 2026 Всички права запазени.</p>
           <button style={styles.scrollTop} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <ArrowUp size={18} color="#000" />
+            <ArrowUp size={18} color="#e2b459" />
           </button>
         </div>
         {/* Signature */}
