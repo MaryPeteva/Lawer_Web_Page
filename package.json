@@ -22,5 +22,9 @@
     "development": [
       "last 1 chrome version"
     ]
-  }
+  },
+  "builds":[
+    { "src":"frontend/package.json", "use":"@vercel/static-build", "config": { "distDir": "frontend/build" } }
+  ],
+  "routes":[{ "src":"(.*)", "dest":"frontend/$1" }]
 }
